@@ -1,0 +1,355 @@
+<html><head><style>
+#red_button1 {
+  position: absolute;
+  top:10px;
+  left:20px;
+  z-index: 9;
+  background-color: #f1f1f1;
+  text-align: center;
+  border: 1px solid #d3d3d3;
+  display:block; 
+}
+
+#def1 {
+  cursor: move;
+  z-index: 10;
+  background-color: #FF0000;
+  color: #000;
+  border: 1px solid #d3d3d3;
+}
+
+#red_button2 {
+  position: absolute;
+  top:60px;
+  left:20px;
+  z-index: 9;
+  background-color: #f1f1f1;
+  text-align: center;
+  border: 1px solid #d3d3d3;
+  display:block; 
+}
+
+#def2 {
+  cursor: move;
+  z-index: 10;
+  background-color: #FF0000;
+  color: #000;
+  border: 1px solid #d3d3d3;
+}
+
+#red_button3 {
+  position: absolute;
+  top:110px;
+  left:20px;
+  z-index: 9;
+  background-color: #f1f1f1;
+  text-align: center;
+  border: 1px solid #d3d3d3;
+  display:block; 
+}
+
+#def3 {
+  cursor: move;
+  z-index: 10;
+  background-color: #FF0000;
+  color: #000;
+  border: 1px solid #d3d3d3;
+}
+
+#red_button4 {
+  position: absolute;
+  top:160px;
+  left:20px;
+  z-index: 9;
+  background-color: #f1f1f1;
+  text-align: center;
+  border: 1px solid #d3d3d3;
+  display:block; 
+}
+
+#def4 {
+  cursor: move;
+  z-index: 10;
+  background-color: #FF0000;
+  color: #000;
+  border: 1px solid #d3d3d3;
+}
+
+#red_button5 {
+  position: absolute;
+  top:210px;
+  left:20px;
+  z-index: 9;
+  background-color: #f1f1f1;
+  text-align: center;
+  border: 1px solid #d3d3d3;
+  display:block; 
+}
+
+#def5 {
+  cursor: move;
+  z-index: 10;
+  background-color: #FF0000;
+  color: #000;
+  border: 1px solid #d3d3d3;
+}
+
+#blue_button1 {
+  position: absolute;
+  top:10px;
+  left:60px;
+  z-index: 9;
+  background-color: #f1f1f1;
+  text-align: center;
+  border: 1px solid #d3d3d3;
+  display:block; 
+}
+
+#off1 {
+  cursor: move;
+  z-index: 10;
+  background-color: #0000FF;
+  color: #000;
+  border: 1px solid #d3d3d3; 
+}
+
+#blue_button2 {
+  position: absolute;
+  top:60px;
+  left:60px;
+  z-index: 9;
+  background-color: #f1f1f1;
+  text-align: center;
+  border: 1px solid #d3d3d3;
+  display:block; 
+}
+
+#off2 {
+  cursor: move;
+  z-index: 10;
+  background-color: #0000FF;
+  color: #000;
+  border: 1px solid #d3d3d3; 
+}
+
+#blue_button3 {
+  position: absolute;
+  top:110px;
+  left:60px;
+  z-index: 9;
+  background-color: #f1f1f1;
+  text-align: center;
+  border: 1px solid #d3d3d3;
+  display:block; 
+}
+
+#off3 {
+  cursor: move;
+  z-index: 10;
+  background-color: #0000FF;
+  color: #000;
+  border: 1px solid #d3d3d3; 
+}
+
+#blue_button4 {
+  position: absolute;
+  top:160px;
+  left:60px;
+  z-index: 9;
+  background-color: #f1f1f1;
+  text-align: center;
+  border: 1px solid #d3d3d3;
+  display:block; 
+}
+
+#off4 {
+  cursor: move;
+  z-index: 10;
+  background-color: #0000FF;
+  color: #000;
+  border: 1px solid #d3d3d3; 
+}
+
+#blue_button5 {
+  position: absolute;
+  top:210px;
+  left:60px;
+  z-index: 9;
+  background-color: #f1f1f1;
+  text-align: center;
+  border: 1px solid #d3d3d3;
+  display:block; 
+}
+
+#off5 {
+  cursor: move;
+  z-index: 10;
+  background-color: #0000FF;
+  color: #000;
+  border: 1px solid #d3d3d3; 
+}
+
+#panel {
+  top: 200px;
+  left: 600px;
+	width: 350px;
+	height: 350px;
+	background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('/static/court.png');
+  /*background-image: url("court.png");*/
+  position: absolute;
+}
+
+#form {
+  top: 560px;
+  left: 720px;
+  width: 350px;
+  height: 350px;
+  position: absolute;
+}
+
+h1 {
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+#main {
+  background-image: url('/static/basketball.jpg');
+  opacity:0.9;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+</style>
+</head><body id='main'>
+  <p text-align=center>
+  <h1 style="color: white">Welcome to Rebound Predictor!</h1>
+  <h3 style="color: red">Red buttons stand for offensive players.</h3>
+  <h3 style="color: blue">Blue buttons stand for defensive players.</h3>
+</p>
+<div id="panel" align="center">
+<div id="red_button1">
+	<div id="def1">1</div>
+</div>
+<div id="red_button2">
+	<div id="def2">2</div>
+</div>
+<div id="red_button3">
+	<div id="def3">3</div>
+</div>
+<div id="red_button4">
+	<div id="def4">4</div>
+</div>
+<div id="red_button5">
+	<div id="def5">5</div>
+</div>
+<div id="blue_button1">
+	<div id="off1" style="color:white">1</div>
+</div>
+<div id="blue_button2">
+	<div id="off2" style="color:white">2</div>
+</div>
+<div id="blue_button3">
+	<div id="off3" style="color:white">3</div>
+</div>
+<div id="blue_button4">
+	<div id="off4" style="color:white">4</div>
+</div>
+<div id="blue_button5">
+	<div id="off5" style="color:white">5</div>
+</div>
+</div>
+<form method="post" action="{{ url_for('main') }}" id="form">
+  <div class="form-group">
+    <textarea name="hidden" class="form-control" style="display: none;" value="" id="hidden"></textarea> 
+  </div>
+  <input type="submit" value="Confirm" onclick="Locate()" align="center">
+</form>
+<script>
+//Make the DIV elements draggagle:
+dragElement(document.getElementById("red_button1"));
+dragElement(document.getElementById("red_button2"));
+dragElement(document.getElementById("red_button3"));
+dragElement(document.getElementById("red_button4"));
+dragElement(document.getElementById("red_button5"));
+dragElement(document.getElementById("blue_button1"));
+dragElement(document.getElementById("blue_button2"));
+dragElement(document.getElementById("blue_button3"));
+dragElement(document.getElementById("blue_button4"));
+dragElement(document.getElementById("blue_button5"));
+
+function dragElement(elmnt) {
+  var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+  elmnt.onmousedown = dragMouseDown;
+
+  function dragMouseDown(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // get the mouse cursor position at startup:
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    document.onmouseup = closeDragElement;
+    // call a function whenever the cursor moves:
+    document.onmousemove = elementDrag;
+  }
+
+  function elementDrag(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // calculate the new cursor position:
+    pos1 = pos3 - e.clientX;
+    pos2 = pos4 - e.clientY;
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    // set the element's new position:
+    if(elmnt.offsetTop - pos2 >= 0 && elmnt.offsetTop - pos2 <= document.getElementById('panel').offsetHeight - 25) {
+      elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+    }
+    if(elmnt.offsetLeft - pos1 >= 5 && elmnt.offsetLeft - pos1 <= document.getElementById('panel').offsetWidth - 15) {
+      elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+    }
+  }
+
+  function closeDragElement() {
+    /* stop moving when mouse button is released:*/
+    document.onmouseup = null;
+    document.onmousemove = null;
+  }
+}
+
+function getOffset(elmnt) {
+	return {top: elmnt.style.top, left: elmnt.style.left};
+}
+
+String.prototype.trimRight = function(charlist) {
+  if (charlist === undefined)
+    charlist = "\s";
+
+  return this.replace(new RegExp("[" + charlist + "]+$"), "");
+};
+
+function Locate()
+{
+  document.getElementById("hidden").value = 
+  getOffset(document.getElementById("red_button1")).top.trimRight("px") + ", " + getOffset(document.getElementById("red_button1")).left.trimRight("px") + "<br>" + 
+  getOffset(document.getElementById("red_button2")).top.trimRight("px") + ", " + getOffset(document.getElementById("red_button2")).left.trimRight("px") + "<br>" + 
+  getOffset(document.getElementById("red_button3")).top.trimRight("px") + ", " + getOffset(document.getElementById("red_button3")).left.trimRight("px") + "<br>" + 
+  getOffset(document.getElementById("red_button4")).top.trimRight("px") + ", " + getOffset(document.getElementById("red_button4")).left.trimRight("px") + "<br>" + 
+  getOffset(document.getElementById("red_button5")).top.trimRight("px") + ", " + getOffset(document.getElementById("red_button5")).left.trimRight("px") + "<br>" + 
+  getOffset(document.getElementById("blue_button1")).top.trimRight("px") + ", " + getOffset(document.getElementById("blue_button1")).left.trimRight("px") + "<br>" + 
+  getOffset(document.getElementById("blue_button2")).top.trimRight("px") + ", " + getOffset(document.getElementById("blue_button2")).left.trimRight("px") + "<br>" + 
+  getOffset(document.getElementById("blue_button3")).top.trimRight("px") + ", " + getOffset(document.getElementById("blue_button3")).left.trimRight("px") + "<br>" + 
+  getOffset(document.getElementById("blue_button4")).top.trimRight("px") + ", " + getOffset(document.getElementById("blue_button4")).left.trimRight("px") + "<br>" + 
+  getOffset(document.getElementById("blue_button5")).top.trimRight("px") + ", " + getOffset(document.getElementById("blue_button5")).left.trimRight("px");
+  document.getElementById("display").innerHTML = document.getElementById("hidden").value;
+}
+
+</script>
+
+
+
+</body></html>

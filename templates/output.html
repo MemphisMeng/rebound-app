@@ -1,0 +1,99 @@
+<html><head>
+	<style>
+	table {
+	  font-family: arial, sans-serif;
+	  border-collapse: collapse;
+	  width: 100%;
+	}
+
+	td, th {
+	  border: 1px solid #dddddd;
+	  text-align: left;
+	  padding: 8px;
+      color: red;
+	}
+
+	tr:nth-child(even) {
+	  background-color: #dddddd;
+	}
+
+    h1 {
+        text-align: center;
+    }
+
+    #main {
+      background-image: url('/static/basketball.jpg');
+      opacity:0.9;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+
+    .img-container {
+        text-align: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+      }
+	</style>
+</head>
+<body id='main'>
+	<h1 style="color: white">Analysis</h1>
+<table>
+    <thead>
+        <tr>
+            <th>Player</th>
+            <th>Probability</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>{{ player1 }}</td>
+            <td>{{ proba1 }}</td>
+        </tr>
+        <tr>
+            <td>{{ player2 }}</td>
+            <td>{{ proba2 }}</td>
+        </tr>
+        <tr>
+            <td>{{ player3 }}</td>
+            <td>{{ proba3 }}</td>
+        </tr>
+        <tr>
+            <td>{{ player4 }}</td>
+            <td>{{ proba4 }}</td>
+        </tr>
+        <tr>
+            <td>{{ player5 }}</td>
+            <td>{{ proba5 }}</td>
+        </tr>
+        <tr>
+            <td>{{ player6 }}</td>
+            <td>{{ proba6 }}</td>
+        </tr>
+        <tr>
+            <td>{{ player7 }}</td>
+            <td>{{ proba7 }}</td>
+        </tr>
+        <tr>
+            <td>{{ player8 }}</td>
+            <td>{{ proba8 }}</td>
+        </tr>
+        <tr>
+            <td>{{ player9 }}</td>
+            <td>{{ proba9 }}</td>
+        </tr>
+        <tr>
+            <td>{{ player10 }}</td>
+            <td>{{ proba10 }}</td>
+        </tr>
+    </tbody>
+</table>
+<img src="/static/bar.png" alt="" class="img-container">
+<p align="center">
+	<a href={{url_for("main")}}>
+		<button style="height:75px;width:150px">Return</button>
+	</a>
+</p>
+</body>
