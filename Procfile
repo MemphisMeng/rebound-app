@@ -1,1 +1,1 @@
-web: sh setup.sh & set FLASK_APP=app.py & flask run
+web: gunicorn app:app --log-level debug
