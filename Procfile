@@ -1,1 +1,1 @@
-web: gunicorn app.app
+web: sh setup.sh & set FLASK_APP=app.py & flask run --server.port $PORT
